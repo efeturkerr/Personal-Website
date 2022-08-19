@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 export default function ContactSection() {
-    const [res, setRes] = useState({status: false, msg: "Mail gönderilirken bir sorunla karşılaşıldı."})
+    const [res, setRes] = useState()
     const formRef = useRef();
 
     const handleSubmit = (e) => {
