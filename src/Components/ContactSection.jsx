@@ -1,16 +1,17 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 export default function ContactSection() {
+    const [res, setRes] = useState({status: false, msg: "Mail gönderilirken bir sorunla karşılaşıldı."})
     const formRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_x8pr9sc', 'template_schi3wg', formRef.current, 'q6GTKhv1cApPfmkoH')
         .then((result) => {
-            console.log(result.text);
+            setRes({status: true ,msg: "Mail başarıyla gönderildi."})
         }, (error) => {
-            console.log(error.text);
+            setRes({status: false, msg: "Mail gönderilirken bir sorunla karşılaşıldı."})
         });
     }
 
@@ -20,6 +21,18 @@ export default function ContactSection() {
                 <h1 className='fw-bold'>Contact me! 📨</h1>
                 <div>
                     <form ref={formRef} onSubmit={handleSubmit} className="rounded-3 p-3" style={{width:"350px",backgroundColor:"#2d3238"}}>
+                        {
+                            res && (
+                                res.status ? 
+                                <div className='bg-success mb-3 rounded w-100 p-2 d-flex justify-content-center align-items-center'>
+                                    {res.msg}
+                                </div>  
+                                :
+                                <div className='bg-danger mb-3 rounded w-100 p-2 d-flex justify-content-center align-items-center'>
+                                    {res.msg}
+                                </div>
+                            )
+                        }
                         <label htmlFor="nameInput1" className="form-label">Name</label>
                         <input required type="text" name="user_name" className="form-control text-light" id="nameInput1" style={{backgroundColor:"#393E46"}}/>
                         <label htmlFor="emailInput1" className="form-label mt-3">Email address</label>
