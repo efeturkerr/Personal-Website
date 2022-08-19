@@ -6,9 +6,7 @@ export default function Views(){
     return(
         <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/Personal-Website/" element={<Home />}/>
             <Route path="/contact" element={<Contact />}/>
-            <Route path="/Personal-Website/contact" element={<Contact />}/>
         </Routes>
     )
 }
