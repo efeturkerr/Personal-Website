@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { FaHome } from "react-icons/fa"
 import { RiMessage3Fill } from "react-icons/ri"
 
@@ -17,10 +18,10 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id='navbar'>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item me-3">
-              <a href="/" className="nav-link fs-5 "><FaHome style={{marginBottom:"5px"}}/> Home</a>
+              <Link to="/" className="nav-link fs-5 "><FaHome style={{marginBottom:"5px"}}/> Home</Link>
             </li>
             <li className="nav-item">
-              <a href="/contact" className="nav-link fs-5"><RiMessage3Fill style={{marginBottom:"5px"}} /> Contact</a>
+              <Link to="/contact" className="nav-link fs-5"><RiMessage3Fill style={{marginBottom:"5px"}} /> Contact</Link>
             </li>
           </ul>
         </div>
