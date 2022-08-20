@@ -8,7 +8,7 @@ export default function Footer() {
       <span className='text-secondary fs-5'>Software Developer</span>
       <div className='mt-2 d-flex gap-3' >
         {/*eslint-disable-next-line*/}
-        <a href='https://www.instagram.com/efeturkerrr/' target={"_blank"}><FaInstagram className='fs-4 text-white'/></a>
+        <a href='https://www.instagram.com/efe._turkerr/' target={"_blank"}><FaInstagram className='fs-4 text-white'/></a>
         {/*eslint-disable-next-line*/}
         <a href='https://github.com/efeturkerr' target={"_blank"}><FaGithub className='fs-4 text-white'/></a>
         {/*eslint-disable-next-line*/}
