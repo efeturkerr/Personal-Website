@@ -27,18 +27,18 @@ export default function HomeSection() {
       <div style={{maxWidth:"450px"}} className="text-center p-3">
         <h1 className='fw-bold'>Technologies 💻</h1>
         <div className='row row-cols-3'>
-          <span className='col mb-2'><FaPython className='fs-5'/> Python</span>
-          <span className='col'><SiJavascript/> Javascript</span>
-          <span className='col mb-2'><SiTypescript className='fs-5'/> Typescript</span>
-          <span className='col'><FaNodeJs className='fs-5'/> Node.js</span>
-          <span className='col'><SiExpress className='fs-5'/> Express.js</span>
-          <span className='col'><SiNestjs className='fs-5'/> NestJS</span>
-          <span className='col'><FaReact className='fs-5'/> React.js</span>
-          <span className='col mb-2'><GrGraphQl className='fs-5'/> Graphql</span>
-          <span className='col mb-2'><SiMongodb className='fs-5'/> Mongo</span>
-          <span className='col'><SiMysql className='fs-4'/> Mysql</span>
-          <span className='col'><FaGitAlt className='fs-5'/> Git</span>
-          <span className='col mb-2'><SiVisualstudiocode className='fs-5'/> VSCode</span>
+          <span className='col mb-2'><FaPython className='fs-4'/> Python</span>
+          <span className='col mb-2'><SiJavascript/> Javascript</span>
+          <span className='col mb-2'><SiTypescript className='fs-4'/> Typescript</span>
+          <span className='col mb-2'><FaNodeJs className='fs-4'/> Node.js</span>
+          <span className='col mb-2'><SiExpress className='fs-4'/> Express.js</span>
+          <span className='col mb-2'><SiNestjs className='fs-4'/> NestJS</span>
+          <span className='col mb-2'><FaReact className='fs-4'/> React.js</span>
+          <span className='col mb-2'><GrGraphQl className='fs-4'/> Graphql</span>
+          <span className='col mb-2'><SiMongodb className='fs-4'/> Mongo</span>
+          <span className='col mb-2'><SiMysql className='fs-4'/> Mysql</span>
+          <span className='col mb-2'><FaGitAlt className='fs-4'/> Git</span>
+          <span className='col mb-2'><SiVisualstudiocode className='fs-4'/> VSCode</span>
         </div>
       </div>
       <div className='d-flex flex-column align-items-center'>
