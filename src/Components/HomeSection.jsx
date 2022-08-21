@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import Discord from "./Discord";
 import { FaPython, FaNodeJs, FaReact, FaGitAlt } from "react-icons/fa"
-import { SiExpress, SiJavascript, SiMongodb, SiMysql, SiTypescript, SiVisualstudiocode } from "react-icons/si"
+import { GrGraphQl } from "react-icons/gr"
+import { SiExpress, SiJavascript, SiMongodb, SiMysql, SiTypescript, SiVisualstudiocode, SiNestjs } from "react-icons/si"
 
 export default function HomeSection() {
   const [discord, setDiscord] = useState(null)
@@ -28,10 +29,12 @@ export default function HomeSection() {
         <div className='row row-cols-3'>
           <span className='col mb-2'><FaPython className='fs-5'/> Python</span>
           <span className='col'><SiJavascript/> Javascript</span>
-          <span className='col'><FaNodeJs className='fs-5'/> Node.js</span>
           <span className='col mb-2'><SiTypescript className='fs-5'/> Typescript</span>
+          <span className='col'><FaNodeJs className='fs-5'/> Node.js</span>
           <span className='col'><SiExpress className='fs-5'/> Express.js</span>
+          <span className='col'><SiNestjs className='fs-5'/> NestJS</span>
           <span className='col'><FaReact className='fs-5'/> React.js</span>
+          <span className='col mb-2'><GrGraphQl className='fs-5'/> Graphql</span>
           <span className='col mb-2'><SiMongodb className='fs-5'/> Mongo</span>
           <span className='col'><SiMysql className='fs-4'/> Mysql</span>
           <span className='col'><FaGitAlt className='fs-5'/> Git</span>
