@@ -10,7 +10,8 @@ const reduce = {
 
 export default function Discord({discord}) {
   const {activities, discord_user, discord_status} = discord
-  var vscActivity = activities.filter(activity => activity.name === "Visual Studio Code")[0];
+  var vscActivity = activities.find(activity => activity.name === "Visual Studio Code");
+
   return (
       <div className={`d-inline gap-3 border border-2 border-${reduce[discord_status]} p-3 rounded-3 d-flex flex-column`}>
         <div className="profile d-flex flex-row align-items-center gap-4">
@@ -23,7 +24,7 @@ export default function Discord({discord}) {
         {
           vscActivity &&
           <div className={`profile d-flex flex-row align-items-center pt-3 border-top border-2 border-${reduce[discord_status]} gap-4`}>
-            <img src={`https://cdn.discordapp.com/app-assets/${vscActivity.application_id}/${vscActivity.assets.large_image}.png`} className="rounded-3" style={{width:"60px"}} alt="" />
+            <img src={vscActivity.assets.large_image.split("/").slice(2).join("/").replace("/", "://")} className="rounded-3" style={{width:"60px"}} alt="" />
             <div className='d-flex flex-column justify-content-center'>
               <span className='fw-bold'>{vscActivity.name}</span>
               <span>{vscActivity.details}</span>
