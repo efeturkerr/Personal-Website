@@ -4,7 +4,7 @@ import Discord from "./Discord";
 import { FaPython, FaNodeJs, FaReact, FaGitAlt } from "react-icons/fa"
 import { GrGraphQl } from "react-icons/gr"
 import { BsBootstrapFill } from "react-icons/bs"
-import { SiExpress, SiJavascript, SiMongodb, SiMysql, SiTypescript, SiVisualstudiocode, SiApollographql, SiTailwindcss, SiNestjs } from "react-icons/si"
+import { SiExpress, SiJavascript, SiMongodb, SiMysql, SiTypescript, SiVisualstudiocode, SiApollographql, SiTailwindcss, SiNestjs, SiDocker, SiPrisma } from "react-icons/si"
 
 export default function HomeSection() {
   const [discord, setDiscord] = useState(null)
@@ -38,10 +38,12 @@ export default function HomeSection() {
             <span className='col mb-2'><FaReact className='fs-4'/> React.js</span>
             <span className='col mb-2'><GrGraphQl className='fs-4'/> Graphql</span>
             <span className='col mb-2'><SiApollographql className='fs-4'/> Apollo Graphql</span>
+            <span className='col mb-2'><SiPrisma className='fs-4'/> Prisma</span>
             <span className='col mb-2'><SiMongodb className='fs-4'/> Mongo</span>
             <span className='col mb-2'><SiMysql className='fs-4'/> Mysql</span>
             <span className='col mb-2'><BsBootstrapFill className='fs-4'/> Bootstrap 5</span>
             <span className='col mb-2'><SiTailwindcss className='fs-4'/> Tailwind</span>
+            <span className='col mb-2'><SiDocker className='fs-4'/> Docker</span>
             <span className='col mb-2'><FaGitAlt className='fs-4'/> Git</span>
             <span className='col mb-2'><SiVisualstudiocode className='fs-4'/> VSCode</span>
           </div>
