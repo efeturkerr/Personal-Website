@@ -7,13 +7,12 @@ export default function ContactSection() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setRes({status: false, msg: "Mail Gönderilemiyor."})
-        /*emailjs.sendForm('service_x8pr9sc', 'template_schi3wg', formRef.current, 'q6GTKhv1cApPfmkoH')
+        emailjs.sendForm('service_x8pr9sc', 'template_schi3wg', formRef.current, 'q6GTKhv1cApPfmkoH')
         .then((result) => {
             setRes({status: true ,msg: "Mail başarıyla gönderildi."})
         }, (error) => {
             setRes({status: false, msg: "Mail gönderilirken bir sorunla karşılaşıldı."})
-        });*/
+        });
     }
 
     return (
